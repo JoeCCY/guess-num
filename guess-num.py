@@ -1,5 +1,13 @@
 import random
-r = random.randint(1, 100)
+while True:
+	start = int(input('請輸入隨機數字範圍開始值: '))
+	end = int(input('請輸入隨機數字範圍結束值: '))
+	if start < end:
+		r = random.randint(start, end)
+		break
+	else:
+		print('開始值必須小於結束值!')
+
 count = 0
 while True:
 	count += 1
